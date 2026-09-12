@@ -186,3 +186,13 @@ frontend/
 ## Disclaimer
 
 GoalForge provides general fitness-planning support, not medical advice. Stop activity and seek professional guidance for pain, injury, or medical concerns.
+
+---
+
+## Author
+
+**Vaughn Cobb**
+
+Software Development Student @ CSCC \
+AWS Certified Cloud & AI Practitioner \
+Aspiring Full-Stack Developer
