@@ -4,6 +4,8 @@ GoalForge AI is an adaptive, multi-agent platform for turning ambitious long-ter
 
 Give GoalForge a goal such as “perform an aerial hoop routine in nine months” or “bench press 300 lb.” It assesses the starting point, maps the competencies required, creates a training plan, tracks goal-specific readiness, and adapts recommendations as progress arrives.
 
+Video Demo - <[URL](https://youtu.be/aU0xlwtYRh8)>
+
 Built for the [AI Tinkerers Global Hackathon: Agents Everywhere — Bots, Channels & More](https://columbus.aitinkerers.org/p/agents-everywhere-bots-channels-more-global-hackathon).
 
 > **Beyond fitness:** Fitness and weight training are the current demonstration domain, not the product boundary. GoalForge’s agent workflow and provider abstraction can be extended to goals of many kinds—learning, creative practice, career development, financial habits, and more—by connecting the relevant application APIs and translating their evidence into goal-specific competencies and milestones.
