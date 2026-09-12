@@ -6,6 +6,8 @@ Give GoalForge a goal such as “perform an aerial hoop routine in nine months�
 
 Built for the [AI Tinkerers Global Hackathon: Agents Everywhere — Bots, Channels & More](https://columbus.aitinkerers.org/p/agents-everywhere-bots-channels-more-global-hackathon).
 
+> **Beyond fitness:** Fitness and weight training are the current demonstration domain, not the product boundary. GoalForge’s agent workflow and provider abstraction can be extended to goals of many kinds—learning, creative practice, career development, financial habits, and more—by connecting the relevant application APIs and translating their evidence into goal-specific competencies and milestones.
+
 ## Highlights
 
 - Create, save, and switch between multiple active goals.
@@ -177,7 +179,7 @@ frontend/
 ## Extending GoalForge
 
 - Move from SQLite to PostgreSQL through `DATABASE_URL`.
-- Implement Garmin, Strava, or manual providers through `FitnessDataProvider`.
+- Implement Garmin, Strava, manual, or non-fitness application providers through the provider abstraction.
 - Add specialist agents and LangGraph nodes without collapsing the existing agent boundaries.
 - Add authentication and scope `/goals` queries per authenticated user for production.
 
