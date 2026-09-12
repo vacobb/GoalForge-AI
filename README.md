@@ -10,6 +10,12 @@ Built for the [AI Tinkerers Global Hackathon: Agents Everywhere — Bots, Channe
 
 > **Beyond fitness:** Fitness and weight training are the current demonstration domain, not the product boundary. GoalForge’s agent workflow and provider abstraction can be extended to goals of many kinds—learning, creative practice, career development, financial habits, and more—by connecting the relevant application APIs and translating their evidence into goal-specific competencies and milestones.
 
+## Hackathon scope and production path
+
+GoalForge was built to run locally during the time constraints of the hackathon. The local FastAPI service, Next.js dashboard, SQLite database, and environment-file configuration keep the prototype fast to set up and easy to demonstrate. They are intentional hackathon tradeoffs, not the intended production deployment model.
+
+To make GoalForge shippable, the next steps are to add authentication and per-user data isolation; move from SQLite to managed PostgreSQL; deploy the frontend and API with CI/CD; store integration credentials securely per user; and run Hevy synchronization through durable background jobs with rate-limit handling, retries, and audit history. Production readiness would also include automated agent and API tests, observability, database migrations and backups, privacy/consent controls, accessibility and mobile polish, and stronger safety evaluation for coaching recommendations.
+
 ## Highlights
 
 - Create, save, and switch between multiple active goals.
