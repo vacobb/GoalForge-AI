@@ -68,10 +68,22 @@ Hevy sync or readiness update
 
 ## Run locally
 
+### Prerequisites
+
+- Git
+- Python 3.11 or newer
+- Node.js 20 or newer and npm
+
+### Clone the project
+
+```bash
+git clone https://github.com/vacobb/GoalForge-AI.git
+cd GoalForge-AI
+```
+
 ### Configure the backend
 
 ```bash
-cd /Users/vaughncobb/Documents/Codex/2026-09-12/you-are-a-senior-ai-architect
 cp backend/.env.example backend/.env
 python3 -m venv .venv
 source .venv/bin/activate
@@ -89,7 +101,7 @@ HEVY_SYNC_INTERVAL_MINUTES=180
 
 `OPENAI_API_KEY` enables model-generated structured outputs. Without it, GoalForge uses deterministic local fallbacks that preserve the same agent boundaries and JSON contracts—useful for development and demos.
 
-Never commit `backend/.env` or expose a Hevy API key in the frontend.
+`HEVY_API_KEY` is optional. Add a personal Hevy Pro API key only if you want workout syncing and routine export. Never commit `backend/.env` or expose any API key in the frontend.
 
 ### Start the API
 
@@ -106,12 +118,18 @@ The API runs at `http://127.0.0.1:8000`.
 In a second terminal:
 
 ```bash
-cd /Users/vaughncobb/Documents/Codex/2026-09-12/you-are-a-senior-ai-architect/frontend
-npm install
+cd frontend
+npm ci
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000). The frontend defaults to `http://localhost:8000`; use `NEXT_PUBLIC_API_URL` to point it elsewhere.
+
+> On Windows, activate the virtual environment with `.venv\Scripts\activate` from the project root before starting the API.
+
+### Fresh-clone behavior
+
+The repository intentionally excludes local SQLite databases, API keys, and Hevy history. A fresh clone starts with an empty dashboard; create a goal in the app to begin. Add your own OpenAI and Hevy credentials only if you want those optional integrations.
 
 ## Hevy integration
 
