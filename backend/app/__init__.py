@@ -1,0 +1,1 @@
+"""GoalForge AI application package."""
